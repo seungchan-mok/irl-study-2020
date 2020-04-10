@@ -13,9 +13,9 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/jekyll-simple" # the subpath of your site, e.g. /blog
-url: "http://http://irl-study-2020.github.io/" # the base hostname & protocol for your site
+url: "https://irl-study-2020.github.io/" # the base hostname & protocol for your site
  
-github_username:  msc9533
+github_username: msc9533
 
 # Build settings
 markdown: kramdown
