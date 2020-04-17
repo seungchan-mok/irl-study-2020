@@ -14,6 +14,7 @@
 - [완전 초보를 위한 깃허브](https://nolboo.kim/blog/2013/10/06/github-for-beginner/)
 - [누구나 쉽게 이해할 수 있는 Git입문](https://backlog.com/git-tutorial/kr/)
 - [Github에서 fork한 저장소 최신 원본으로 동기화 하기](https://lifove.tistory.com/54)
+- [포크한 깃허브 저장소를 원본 저장소와 동기화 하기](https://hyunjun19.github.io/2018/03/09/github-fork-syncing/)
 
 ## Contributor
 
