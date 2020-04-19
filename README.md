@@ -8,6 +8,25 @@
 - Algorithm위주의 간단한 발표주제 선정(30분 이내)
 - Background, Method, Conclusion의 단락으로 구성
 
+### 포스트 업로드 방법
+
+- github 자신의 계정에 repository fork
+- `_posts`폴더에 포스트 저장
+
+```md
+---
+layout: post
+title:  RANSAC이란?
+category: algorithm
+description: RANSAC 알고리즘을 간단한 예제로 알아봅니다.
+---
+
+내용..
+```
+
+- .md 파일의 첫부분은 위와 같이 작성, 파일명은 업로드 날짜 및 제목 `yyyy-mm-dd-title.md`
+- origin repo에 merge request.
+
 ## 참고문서
 
 - [마크다운 사용법](https://gist.github.com/ihoneymon/652be052a0727ad59601)
