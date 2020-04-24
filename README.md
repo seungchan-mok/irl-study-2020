@@ -7,6 +7,7 @@
 - 매주 금요일 저녁 오프라인 발표
 - Algorithm위주의 간단한 발표주제 선정(30분 이내)
 - Background, Method, Conclusion의 단락으로 구성
+- 가급적 직접 구현한 soure code와 설명 첨부
 
 ### 포스트 업로드 방법
 
@@ -26,6 +27,7 @@ description: RANSAC 알고리즘을 간단한 예제로 알아봅니다.
 
 - .md 파일의 첫부분은 위와 같이 작성, 파일명은 업로드 날짜 및 제목 `yyyy-mm-dd-title.md`
 - origin repo에 merge request.
+- 사진, 코드 등의 내용 첨부시 다른 블로그, git repo, 논문등 다른 저작물에서 그대로 가져오지 말것.
 
 ## 참고문서
 
@@ -38,6 +40,7 @@ description: RANSAC 알고리즘을 간단한 예제로 알아봅니다.
 ## Contributor
 
 - [msc9533](https://github.com/msc9533)
+- [Epsilon8854](https://github.com/Epsilon8854)
 
 ---
 

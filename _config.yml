@@ -29,4 +29,4 @@ disqus_shortname:
 # used this for post_excerpt at index_page
 excerpt_separator: <!--description-->
 
-exclude: ['_posts/2020-04-24-RRT_RRTstar.md']
+# exclude: ['_posts/2020-04-24-RRT_RRTstar.md']
