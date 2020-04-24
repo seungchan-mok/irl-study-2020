@@ -294,15 +294,12 @@ RRT와는 다르게 RRT_star는 트리를 구성하는 노드를 대체하여 �
     - (c) cost를 참고하여 가장 가까운 노드들의 트리중 더 좋은 방법이 있는지 찾습니다. 이 과정은 [Dijkstra](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%81%AC%EC%8A%A4%ED%8A%B8%EB%9D%BC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98) 알고리즘과 유사합니다.
     - (d) 트리를 재구성합니다.
 
-<!-- ![](https://d3i71xaburhd42.cloudfront.net/60324fd5346b86a4821c8e36137b7bfb860a0165/4-Figure1-1.png) -->
-<!-- 논문이미지 -->
+
 [출처](https://www.semanticscholar.org/paper/Arm-Trajectory-Generation-Based-on-RRT*-for-Robot-Lee-Baek/60324fd5346b86a4821c8e36137b7bfb860a0165)
 
 
 
 
-<!-- ![](https://t1.daumcdn.net/cfile/tistory/2415D33D54EA8AB61A?download) -->
-<!-- 이미지 -->
 ### RRT* 결과
 
 ![](https://imgur.com/9aCP9fo.png)
