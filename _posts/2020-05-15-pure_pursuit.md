@@ -17,19 +17,19 @@ Pure pursuit의 기하학적 모델링과 중요 파라미터인 Look-ahead-dist
 ### 1. Geometry of pure pursuit model 
 <center><img src = "https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-319-62434-1_40/MediaObjects/454216_1_En_40_Fig2_HTML.gif" width = "500"></center>
 
-    차량조향각에 대한 모델링은 위 그림과 같습니다. 위 모델링을 통해 Pure pursuit 알고리즘에서 사용되는 목표지점(Gx,Gy)를 추종하기 위한 차량의 조향각(세타)을 구할 수 있습니다.
-    
-    수학적으로 계산한 차량조향각 세타는 아래와 같습니다.
+차량조향각에 대한 모델링은 위 그림과 같습니다. 위 모델링을 통해 Pure pursuit 알고리즘에서 사용되는 목표지점(Gx,Gy)를 추종하기 위한 차량의 조향각(세타)을 구할 수 있습니다.  
+
+수학적으로 계산한 차량조향각 세타는 아래와 같습니다.
 
 <center><img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRfKpsXg_EoaINoz5270eLjItTsPO3gSOF_OIMPgagTjxtr-tpE&usqp=CAU"></center>
 
 ### 2. Look-ahead-Distance(LD)
 
-    Pure pursuit 알고리즘에서 Look-ahead-distance는 차량의 후륜에서 목표지점까지의 직선거리를 의미합니다. Look-ahead-distance를 어떻게 설정하느냐에 따라 경로추종방식이 변화하기 때문에 Look-ahead-distance를 어떻게 설정하느냐는 매우 중요합니다.
+Pure pursuit 알고리즘에서 Look-ahead-distance는 차량의 후륜에서 목표지점까지의 직선거리를 의미합니다. Look-ahead-distance를 어떻게 설정하느냐에 따라 경로추종방식이 변화하기 때문에 Look-ahead-distance를 어떻게 설정하느냐는 매우 중요합니다.
 
-    1) LD를 짧게 설정할 경우 : 차량이 경로상으로 빠르게 복귀해야하는 경우에는 Look-ahead-distance를 짧게 설정해야합니다. 하지만, 너무 짧게 설정할 경우 횡방향 오실레이션이 발생할 위험이 있습니다.
+1) LD를 짧게 설정할 경우 : 차량이 경로상으로 빠르게 복귀해야하는 경우에는 Look-ahead-distance를 짧게 설정해야합니다. 하지만, 너무 짧게 설정할 경우 횡방향 오실레이션이 발생할 위험이 있습니다.
 
-    2) LD를 길게 설정할 경우 : 차량이 경로를 부드럽게 주행하기 위해서는 Look-ahead-distance를 길게 설정합니다. 하지만, 너무 길게 설정할 경우 코너 근처에서 더 큰 곡율이 발생할 수 있고, 경로추종의 성능이 저하될 수 있습니다.
+2) LD를 길게 설정할 경우 : 차량이 경로를 부드럽게 주행하기 위해서는 Look-ahead-distance를 길게 설정합니다. 하지만, 너무 길게 설정할 경우 코너 근처에서 더 큰 곡율이 발생할 수 있고, 경로추종의 성능이 저하될 수 있습니다.
 
 
 
