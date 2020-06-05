@@ -33,6 +33,7 @@ description : dijkstra 알고리즘을 간단한 예제로 알아보기.
 
 <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC_%EA%B0%B1%EC%8B%A0.png/220px-%EB%8B%A4%EC%9D%B5%EC%8A%A4%ED%8A%B8%EB%9D%BC_%EA%B0%B1%EC%8B%A0.png">
 (출처 - https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%81%AC%EC%8A%A4%ED%8A%B8%EB%9D%BC_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+
 현재위치에서 인접한 3개의 점까지 5의 거리로 도착할 수 있다고 하자. 주황색 점은 이미 다른 점에서부터 13의 거리로 도착할 수 있으므로(13<10+5) 갱신하지 않는다. 가운데 무한대 기호는 아직 방문하지 않았다는 기호이다. 따라서 현재위치거리 10에 5를 더한 15로 거리를 갱신한다. 오른쪽의 17은 다른 점에서 17의 거리로 왔는데 현재 위치에서 5만 이동하면 갈 수 있으므로(10+5<17) 15로 갱신한다.
 
 4. 만약 현재 꼭짓점에 인접한 모든 미방문 꼭짓점까지의 거리를 계산했다면, 현재 꼭짓점을 방문한 것으로 표시하고 방문한 꼭짓점은 이후에는 다시 방문하지 않는다.
