@@ -19,7 +19,7 @@ description : dijkstra 알고리즘을 간단한 예제로 알아보기.
 
 원래 알고리즘은 두 꼭짓점 간의 가장 짧은 경로를 찾는 알고리즘이지만, 더 일반적인 변형은 한 꼭짓점을 "소스" 꼭짓점으로 고정하고 그래프의 다른 모든 꼭짓점까지의 최단경로를 찾는 알고리즘으로 최단경로트리를 만드는 것이다.
 
-<center><img src = "https://upload.wikimedia.org/wikipedia/commons/2/23/Dijkstras_progress_animation.gif" width = "500"><
+<center><img src = "https://upload.wikimedia.org/wikipedia/commons/2/23/Dijkstras_progress_animation.gif" width = "500">
 
 위 사진은 최단경로트리를 만드는 특징의 예시로 왼쪽 아래 시작점을 소스 꼭짓점으로 고정하고 가고자하는 꼭짓점까지의 최단경로트리를 만들고 있다.
 
