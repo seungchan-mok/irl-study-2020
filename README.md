@@ -42,6 +42,7 @@ description: RANSAC 알고리즘을 간단한 예제로 알아봅니다.
 - [msc9533](https://github.com/msc9533)
 - [Epsilon8854](https://github.com/Epsilon8854)
 - [jojaeyoun](https://github.com/jojaeyoun)
+- [heodaewon9091](https://github.com/heodaewon9091)
 
 
 ---

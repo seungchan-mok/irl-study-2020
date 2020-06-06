@@ -12,6 +12,7 @@ permalink: /about/
   - [msc9533](https://github.com/msc9533)
   - [Epsilon8854](https://github.com/Epsilon8854)
   - [jojaeyoun](https://github.com/jojaeyoun)
+  - [heodaewon9091](https://github.com/heodaewon9091)
 
 ---
 
