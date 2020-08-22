@@ -1,4 +1,4 @@
-# check list
+# check list - 확인후 지우기!
 
 - [ ] 파일제목 확인! - (_post/yyyy-mm-dd-title.md)
 - [ ] 작성한 파일의 첫 머리글 확인! * `---`(처음줄, description 밑) 꼭 확인!
