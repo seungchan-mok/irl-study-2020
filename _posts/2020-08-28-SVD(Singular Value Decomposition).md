@@ -5,12 +5,11 @@ description: SVD의 이해, 활용
 tags: 선형대수
 ---
 
-- this post from [here](https://msc9533.github.io/2020/08/k-means-clustering/)
-
 # SVD(Singular Value Decomposition)
 
 ## 먼저 알아두어야 할 내용
 - 기저 행렬
+
 ---
   x, y ,z 축에 대한 단위벡터 행렬
   
@@ -19,12 +18,17 @@ tags: 선형대수
   j = (0,1,0),\quad
   k = (0,0,1)
   $$
+
 - 벡터의 선형 변환
+
 ---
+
 $$
 T(c(\vec{a}+\vec{b})) = cT(\vec{a})+cT(\vec{b})
 $$
+
 위와 같은 성질에 따라 기존의 좌표는 다음과 같이 나타낼 수 있다
+
 $$
 T\left(
 \begin{bmatrix}
@@ -47,8 +51,9 @@ bT\left(
 \end{bmatrix}
 \right)
 $$
-즉,
-새로운 백터 기저
+
+즉, 새로운 백터 기저
+
 $$
 T\left(
 \begin{bmatrix}
@@ -64,6 +69,7 @@ T\left(
 \end{bmatrix}
 \right)
 $$
+
 의 a배와 b배의 합으로 나타내진다.
 
 다시 말해 새로운 기저에서의 $\vec{a}$+$\vec{b}$ 이다.
@@ -78,40 +84,42 @@ A=
 \begin{pmatrix}
 2 & -3\\
 1 & 1
-\end{pmatrix}
+\end{pmatrix} \\
+A \vec{x} = ?
+$$  
+  
+- [선형변환 해보기-공돌이의 수학정리노트](https://angeloyeo.github.io/p5/Matrix_as_a_linear_transformation/transformation1/)  
 
-$$
+- 내적은 행렬의 곱으로 나타낼 수 있다.  
 
-$$
-A\vec{x} = ?
-$$
-[선형변환 해보기-공돌이의 수학정리노트](https://angeloyeo.github.io/p5/Matrix_as_a_linear_transformation/transformation1/)
-- 내적은 행렬의 곱으로 나타낼 수 있다.
----
-u = <$u_a,u_b,u_c$>
 
-v = <$v_a,v_b,v_c$>
+u = <$u_a,u_b,u_c$>  v = <$v_a,v_b,v_c$>
+
+
 $$
 u \cdot v = u_a v_a+u_v b_b+u_c v_c\\
 =\begin{pmatrix}
 u_a & u_b & u_c
 \end{pmatrix}
+
 \begin{pmatrix}
 v_a \\
 v_b \\
 v_c
-\end{pmatrix}
-\\
+\end{pmatrix} 
+= uv^T
 $$
-<center>= uv<sup>T</sup></center>
 
----
-- 직교행렬 (Orthogonal Matrix) 
----
+
+- 직교행렬 (Orthogonal Matrix)   
+
 다음과 같은 식을 만족하는 행렬을 직교행렬이라고 한다.
-$$U^TU = I
 $$
-$$I=\begin{pmatrix}
+U^TU = I
+$$
+
+$$
+I=\begin{pmatrix}
 1   & 0   & 0   & ... & 0\\
 0   & 1   & 0   & ... & 0\\
 0   & 0   & 1   & ... & 0\\
@@ -119,7 +127,9 @@ $$I=\begin{pmatrix}
 0   & 0   & 0   & 0   & 1 
 \end{pmatrix}
 $$
+
 직교행렬의 성질을 알아보기 위해 다음과 임의의 직교행렬 W에 대해 같이 전개를 해보겠다
+
 $$
 a = (a_1,a_2,a_3), \quad
 W=\begin{pmatrix}
@@ -128,7 +138,9 @@ W=\begin{pmatrix}
 - & c & - \\
 \end{pmatrix}
 $$
+
 전치행렬은
+
 $$
 W^T = \begin{pmatrix}
 | & | & | \\
@@ -136,7 +148,9 @@ a^t & b^t & c^t \\
 | & | & | \\
 \end{pmatrix}\\
 $$
+
 이 둘을 곱하면
+
 $$
 WW^T = \begin{pmatrix}
 aa^t & ab^t & ac^t \\
@@ -156,6 +170,8 @@ c\cdot a & c\cdot b & c\cdot c \\
 0 & 0 & 1 \\
 \end{pmatrix}
 $$
+
+
 즉, 직교행렬이란 행렬안의 모든 행, 열 벡터들이 자기 자신을 제외한 모든 행,열 벡터들과 직교인 동시에 단위 벡터인 행렬을 말한다.
 
 또한 다음과 같은 성질을 가진다.
@@ -165,22 +181,26 @@ U^TU = I,\quad U^{-1}U=I \quad => \quad U^T= U^{-1}
 $$
 
 
-![]()
 - 대각행렬 (Diagonal Matrix)
+
 ---
+
 대각성분을 제외한 나머지 원소의 값이 0인 행렬을 말한다
 
-$$\Sigma=\begin{pmatrix}
- \sigma_1  & 0   & 0   & ... & 0\\
-0   &  \sigma_2   & 0   & ... & 0\\
-0   & 0   &  \sigma_3   & ... & 0\\
-... & ... & ... & ... & 0\\
-0   & 0   & 0   & 0   &  \sigma_n 
+$$
+\Sigma=\begin{pmatrix} \\
+ \sigma_1  & 0   & 0   & ... & 0 \\
+0   &  \sigma_2   & 0   & ... & 0 \\
+0   & 0   &  \sigma_3   & ... & 0 \\
+... & ... & ... & ... & 0 \\
+0   & 0   & 0   & 0   &  \sigma_n \\
 \end{pmatrix}
 $$
+
 만약 $\Sigma$ 가 M X N 일 때 M > N 이라면 
 
-$$\Sigma=\begin{pmatrix}
+$$
+\Sigma=\begin{pmatrix}
  \sigma_1  & 0   & 0   & ... & 0\\
 0   &  \sigma_2   & 0   & ... & 0\\
 0   & 0   &  \sigma_3   & ... & 0\\
@@ -189,16 +209,19 @@ $$\Sigma=\begin{pmatrix}
 0   & 0   & 0   & 0   & 0\\
 ... & ... & ... & ... & ...\\
 0   & 0   & 0   & 0   & 0\\
-
 \end{pmatrix}
 $$
+
 ---
+
 # SVD
+
 임의의 행렬 A에 대하여 다음과 같이 행렬을 분해할 수 있다.
-$$
-A=U\Sigma V^T\\
 
 $$
+A=U\Sigma V^T\\
+$$
+
 A : m $\times$ n 인 임의의 행렬(선형변환에 사용하는 행렬)
 
 U : m $\times$ m 인 직교행렬(선형변환 후 행렬)
@@ -212,15 +235,17 @@ V : m $\times$ n 인 직교행렬(선형변환 전 행렬)
 설명을 위해 선형 변환의 예제를 보겠다.
 
 벡터 $\vec{x}$를 다음과 같은 행렬 A를 이용하여 선형변환하면($A\vec{x}$를 구하면)
+
 $$
-A = \begin{pmatrix}
+A = \begin{pmatrix} 
 0.25 & 0.75 \\
 1 & 0.5 \\
 \end{pmatrix}
 $$
 
 
-![](https://imgur.com/YnNWkPm.gif)
+![](https://imgur.com/YnNWkPm.gif)  
+
 위 그림을 보면 선형변환을 하면 크기 또한 변한다는 것을 알 수 있다. 
 
 이번에는 직교하는 두 벡터를 선형변환하면
@@ -233,8 +258,8 @@ $$
 
 $$
 A=U\Sigma V^T\\
-
 $$
+
 라는 식은 다음과 같은 선형변환 수식으로부터 유도되었다
 
 A : m $\times$ n 인 임의의 행렬(선형변환에 사용하는 행렬)
@@ -251,27 +276,37 @@ V : m $\times$ n 인 직교행렬(선형변환 전 행렬)
 $$
 AV=X(변환된 행렬)
 $$
+
 [만약 선형 변환을 한 뒤에도 두 벡터가 직교를 한다면](https://angeloyeo.github.io/p5/2019-08-01-preview_SVD/) 이를 다시 단위행렬과 그 크기로 나타낼 수 있다.
+
 $$
 AV=\Sigma U
 $$
+
 이 때 다음과 같은 직교행렬 성질 때문에
+
 $$
 V^T = V^{-1}
 $$
+
 식을 다시
+
 $$
 A=U\Sigma V^T\\
 $$
+
 과 같이 나타낼 수 있다.
 
 이 식은 다음과 같은 시각으로도 볼 수 있다.
 
 ## 임의 행렬 A를 정보량에 따라 쪼갤 수 있다.
+
 $$
 A=U\Sigma V^T\\
 $$
+
 는
+
 $$
  = \begin{pmatrix}
 | & | & ... & | \\
@@ -294,7 +329,7 @@ $$
 - & \vec{v_m}^T & - \\
 \end{pmatrix}\\
 $$
-
+  
 $$
 = \sigma_1\vec{u_1}\vec{v_1}^T + \sigma_1\vec{u_1}\vec{v_1}^T +... +\sigma_m\vec{u_m}\vec{v_m}^T
 $$
@@ -306,16 +341,16 @@ $$
 
 
 - thin SVD
-  (행렬 크기를 맞춰주기 위해 넣었던 0을 모두 지움)
+  (행렬 크기를 맞춰주기 위해 넣었던 0을 모두 지움)  
 
 ![](https://imgur.com/asyUqMy.png)
 
-- Compact SVD(크기가 0인 특이값들을 날림)
+- Compact SVD(크기가 0인 특이값들을 날림)  
   
 ![](https://imgur.com/BYHrq5N.png)
 
 - [Truncated SVD](https://angeloyeo.github.io/p5/2019-08-01-SVD_picture_applet/)
-  (크기가 큰 t개의 특이값들만을 남김)
+  (크기가 큰 t개의 특이값들만을 남김)  
 ![](https://imgur.com/154sAWH.png)
 
 ## pseudo inverse를 할 수 있다.
@@ -325,8 +360,10 @@ $$
 
 - 역행렬을 구할 수 없는 행렬 A의 역행렬을 $A^+$와 같이 표현한다.
 - $\Sigma$의 역행렬 $\Sigma^+$를 다음과 같이 정의한다.
- $$\Sigma=\begin{pmatrix}
- 1\over\sigma_1  & 0   & 0   & ... & 0\\
+ 
+$$
+\Sigma=\begin{pmatrix}
+1\over\sigma_1  & 0   & 0   & ... & 0\\
 0   &  1\over\sigma_2  & 0   & ... & 0\\
 0   & 0   &  1\over\sigma_3   & ... & 0\\
 ... & ... & ... & ... & 0\\
@@ -335,9 +372,11 @@ $$
 $$
 
 SVD의 기본 식은
+
 $$
 A=U\Sigma V^T\\
 $$
+
 이고 다음과 같이 나타낼 수 있다
 
 $$
@@ -347,6 +386,7 @@ $$
 즉 A의 역행렬 $A^+$를 손쉽게 구할 수 있다.
 
 ex)
+
 $$
 Ax = B\\
 A^+Ax =A^+B\\
