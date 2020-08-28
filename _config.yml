@@ -20,7 +20,8 @@ github_username: msc9533
 markdown: kramdown
 kramdown:
   input: GFM
-
+plugins:
+  - jekyll-katex
 # Third-party services
 # just leave someone empty to disable it
 # google_analytics: 
